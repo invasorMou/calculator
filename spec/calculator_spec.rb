@@ -8,6 +8,9 @@ describe Calculator  do
 		it 'should return an integer or a float' do
 			expect(Calculator.add(10,7)).to be_a Integer
 		end
+		it 'could take more than two arguments' do
+			expect(Calculator.add(10,7,2)).to eq 19
+		end
 	end
 	describe '::sub' do
 		it 'should return substraction of two integers' do 
